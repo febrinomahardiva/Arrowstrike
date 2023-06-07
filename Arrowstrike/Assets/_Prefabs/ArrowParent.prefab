@@ -30,11 +30,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1526392505844526371}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &195082631161222745
 TrailRenderer:
-  serializedVersion: 3
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,14 +135,11 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
-    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
-  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
-  m_ApplyActiveColorSpace: 1
 --- !u!1 &6726587074533708524
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +152,7 @@ GameObject:
   - component: {fileID: 6495041444379485271}
   - component: {fileID: 7852379594108340770}
   - component: {fileID: -2847333652866196915}
+  - component: {fileID: -5615352388411908375}
   m_Layer: 6
   m_Name: ArrowParent
   m_TagString: Arrow
@@ -223,12 +221,23 @@ MonoBehaviour:
   myCollider: {fileID: 1983972373141097261}
   stickingArrow: {fileID: 5465402549650529376, guid: d7c3e1dd28124234987bdc186f6914b7,
     type: 3}
+--- !u!114 &-5615352388411908375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726587074533708524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7584def812c6b34498aaf2e7f68611de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4545825367615972982
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 8362636956233555048}
     m_Modifications:
     - target: {fileID: 1918996417309383662, guid: ae75179165c8e854fa9af578948a1009,
@@ -269,7 +278,7 @@ PrefabInstance:
     - target: {fileID: 3042412393605614421, guid: ae75179165c8e854fa9af578948a1009,
         type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3042412393605614421, guid: ae75179165c8e854fa9af578948a1009,
         type: 3}
@@ -322,11 +331,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3042412393605614421, guid: ae75179165c8e854fa9af578948a1009,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 242198597526225036}
   m_SourcePrefab: {fileID: 100100000, guid: ae75179165c8e854fa9af578948a1009, type: 3}
 --- !u!4 &1526392505844526371 stripped
 Transform:
