@@ -5,28 +5,35 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    private int score = 0;
+    public int Score => score; // Tambahkan properti Score untuk mengakses nilai score
+
     public TextMeshProUGUI scoreText;
-    private int score;
 
-    private void Start()
+    public void AddScore(int value)
     {
-        score = 0;
+        score += value;
         UpdateScoreText();
     }
 
-    public void AddScore(int points)
+    public void UpdateScoreText()
     {
-        score += points;
-        UpdateScoreText();
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + score;
+        }
     }
 
-    public int GetScore()
+    public void ShowFinalScore()
     {
-        return score;
+        // Implementasikan logika yang sesuai untuk menampilkan skor akhir
+        Debug.Log("Final Score: " + score);
     }
 
-    private void UpdateScoreText()
-    {
-        scoreText.text = "Score: " + score.ToString();
-    }
+    public void ResetScore()
+{
+    score = 0;
+    UpdateScoreText();
+}
+
 }

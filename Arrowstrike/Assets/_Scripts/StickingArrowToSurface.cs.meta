@@ -3,12 +3,7 @@ guid: 5de6a490ed962454388c27f1dc1114a2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - rb: {instanceID: 0}
-  - myCollider: {instanceID: 0}
-  - stickingArrow: {fileID: 5465402549650529376, guid: d7c3e1dd28124234987bdc186f6914b7,
-      type: 3}
-  - scoreManager: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

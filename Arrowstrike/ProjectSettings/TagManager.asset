@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Right Hand
   - Left Hand
+  - Target
   layers:
   - Default
   - TransparentFX

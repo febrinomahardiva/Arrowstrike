@@ -151,8 +151,7 @@ GameObject:
   - component: {fileID: 8362636956233555048}
   - component: {fileID: 6495041444379485271}
   - component: {fileID: 7852379594108340770}
-  - component: {fileID: -5615352388411908375}
-  - component: {fileID: -9021442048015590455}
+  - component: {fileID: -2847333652866196915}
   m_Layer: 6
   m_Name: ArrowParent
   m_TagString: Arrow
@@ -205,19 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6495041444379485271}
---- !u!114 &-5615352388411908375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6726587074533708524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7584def812c6b34498aaf2e7f68611de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-9021442048015590455
+--- !u!114 &-2847333652866196915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,7 +220,8 @@ MonoBehaviour:
   myCollider: {fileID: 1983972373141097261}
   stickingArrow: {fileID: 5465402549650529376, guid: d7c3e1dd28124234987bdc186f6914b7,
     type: 3}
-  scoreManager: {fileID: 0}
+  targetA: {fileID: 606455407165080763, guid: 7fd0147ec4c090d43935a8d7f51b2e36, type: 3}
+  scoreText: {fileID: 0}
 --- !u!1001 &4545825367615972982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -331,8 +319,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -9010082007144228539, guid: ae75179165c8e854fa9af578948a1009, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae75179165c8e854fa9af578948a1009, type: 3}
 --- !u!4 &1526392505844526371 stripped
 Transform:
@@ -346,26 +333,3 @@ SphereCollider:
     type: 3}
   m_PrefabInstance: {fileID: 4545825367615972982}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2190162604878346137 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2410271734309294575, guid: ae75179165c8e854fa9af578948a1009,
-    type: 3}
-  m_PrefabInstance: {fileID: 4545825367615972982}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2695323079282539412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2190162604878346137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de6a490ed962454388c27f1dc1114a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 6495041444379485271}
-  myCollider: {fileID: 1983972373141097261}
-  stickingArrow: {fileID: 5465402549650529376, guid: d7c3e1dd28124234987bdc186f6914b7,
-    type: 3}
-  scoreManager: {fileID: 0}

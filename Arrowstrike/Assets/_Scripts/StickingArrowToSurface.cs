@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class StickingArrowToSurface : MonoBehaviour
 {
@@ -12,7 +13,10 @@ public class StickingArrowToSurface : MonoBehaviour
     [SerializeField]
     private GameObject stickingArrow;
 
-    public ScoreManager scoreManager;
+    [SerializeField]
+    public GameObject targetA;
+    private int scoreValue = 5; // Nilai skor yang diberikan saat panah mengenai target
+    public TextMeshProUGUI scoreText; // Reference ke UI TextMeshProUGUI untuk menampilkan skor
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -23,17 +27,20 @@ public class StickingArrowToSurface : MonoBehaviour
         arrow.transform.position = transform.position;
         arrow.transform.forward = transform.forward;
 
-        if (collision.collider.attachedRigidbody != null)
+        if (collision.collider.attachedRigidbody != targetA)
         {
             arrow.transform.parent = collision.collider.attachedRigidbody.transform;
         }
 
         collision.collider.GetComponent<IHittable>()?.GetHit();
 
-        scoreManager.AddScore(1);
-
-
         Destroy(gameObject);
 
+        // Mengakses komponen ScoreManager dan menambahkan skor
+        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        if (scoreManager != null)
+        {
+            scoreManager.AddScore(scoreValue);
+        }
     }
 }

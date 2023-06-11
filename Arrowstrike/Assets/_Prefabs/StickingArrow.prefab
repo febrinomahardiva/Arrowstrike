@@ -150,6 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7101807066798691044}
   - component: {fileID: 4421850421748363255}
+  - component: {fileID: 7732187426036391314}
   m_Layer: 6
   m_Name: StickingArrow
   m_TagString: Arrow
@@ -269,6 +270,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7732187426036391314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465402549650529376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7584def812c6b34498aaf2e7f68611de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2996765056995846394
 PrefabInstance:
   m_ObjectHideFlags: 0
