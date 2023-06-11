@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+   
     public GameObject[] animalPrefabs; // Array prefab objek hewan
     public float spawnRangeX = 20f; // Rentang spawn pada sumbu X
     public float minSpawnPosZ = 115f; // Posisi minimal spawn pada sumbu Z
@@ -17,6 +18,7 @@ public class SpawnManager : MonoBehaviour
     {
         // Memulai coroutine untuk melakukan spawn otomatis
         StartCoroutine(SpawnObjects());
+
     }
 
     private IEnumerator SpawnObjects()
@@ -40,6 +42,7 @@ public class SpawnManager : MonoBehaviour
                 // Menghancurkan objek setelah jangka waktu tertentu
                 Destroy(spawnedAnimal, despawnDelay);
             }
+            
         }
     }
 }

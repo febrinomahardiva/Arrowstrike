@@ -12,6 +12,8 @@ public class StickingArrowToSurface : MonoBehaviour
     [SerializeField]
     private GameObject stickingArrow;
 
+    public ScoreManager scoreManager;
+
     private void OnCollisionEnter(Collision collision)
     {
         rb.isKinematic = true;
@@ -27,6 +29,9 @@ public class StickingArrowToSurface : MonoBehaviour
         }
 
         collision.collider.GetComponent<IHittable>()?.GetHit();
+
+        scoreManager.AddScore(1);
+
 
         Destroy(gameObject);
 
