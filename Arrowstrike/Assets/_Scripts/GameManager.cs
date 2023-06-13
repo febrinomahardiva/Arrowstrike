@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
             spawnManager.minSpawnPosY = 13f;
             spawnManager.maxSpawnPosY = 22f;
             spawnManager.spawnInterval = 6f;
-            spawnManager.despawnDelay = 100f;
+            spawnManager.despawnDelay = 7f;
 
             // Mulai permainan
             spawnManager.StartSpawning();
@@ -166,8 +166,8 @@ public void GameOver()
 
         isGameStarted = false;
 
-            // Menghapus PlayerPrefs "HighScore"
-    PlayerPrefs.DeleteKey("HighScore");
+    // Menghapus PlayerPrefs "HighScore"
+    // PlayerPrefs.DeleteKey("HighScore");
     PlayerPrefs.Save();
     }
 }
