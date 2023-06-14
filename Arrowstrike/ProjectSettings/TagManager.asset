@@ -9,6 +9,8 @@ TagManager:
   - Right Hand
   - Left Hand
   - Target
+  - Point
+  - Buff
   layers:
   - Default
   - TransparentFX

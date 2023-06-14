@@ -47,11 +47,16 @@ public class TimerManager : MonoBehaviour
         UpdateTimerText();
     }
 
+    public void AddTime(float timeToAdd)
+    {
+        currentTime += timeToAdd;
+    }
+
     private void UpdateTimerText()
     {
         if (timerText != null)
         {
-            timerText.text = "Time: " + Mathf.CeilToInt(currentTime);
+            timerText.text = "" + Mathf.CeilToInt(currentTime);
         }
     }
 

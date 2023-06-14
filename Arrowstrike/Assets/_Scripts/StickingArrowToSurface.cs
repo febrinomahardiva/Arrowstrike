@@ -16,7 +16,6 @@ public class StickingArrowToSurface : MonoBehaviour
     [SerializeField]
     public GameObject targetA;
     private int scoreValue = 5; // Nilai skor yang diberikan saat panah mengenai target
-    public TextMeshProUGUI scoreText; // Reference ke UI TextMeshProUGUI untuk menampilkan skor
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -34,13 +33,25 @@ public class StickingArrowToSurface : MonoBehaviour
 
         collision.collider.GetComponent<IHittable>()?.GetHit();
 
-        Destroy(gameObject);
-
-        // Mengakses komponen ScoreManager dan menambahkan skor
-        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
-        if (scoreManager != null)
+        if (!collision.collider.CompareTag("Buff"))
         {
-            scoreManager.AddScore(scoreValue);
+            // Mengakses komponen ScoreManager dan menambahkan skor
+            ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            if (scoreManager != null)
+            {
+                scoreManager.AddScore(scoreValue);
+            }
         }
+        else
+        {
+            // Mengakses komponen TimerManager dan menambahkan waktu
+            TimerManager timerManager = FindObjectOfType<TimerManager>();
+            if (timerManager != null)
+            {
+                timerManager.AddTime(5f);
+            }
+        }
+
+        Destroy(gameObject);
     }
 }
