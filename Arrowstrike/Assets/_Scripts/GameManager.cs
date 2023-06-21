@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
             spawnManager.spawnInterval = 6f;
             spawnManager.despawnDelay = 7f;
 
-            buffSpawnManager.spawnInterval = 3f;
+            buffSpawnManager.spawnInterval = 5f;
             buffSpawnManager.despawnDelay = 7f;
 
             // Mulai permainan
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
             spawnManager.maxSpawnPosZ = 140f;
             spawnManager.minSpawnPosY = 13f;
             spawnManager.maxSpawnPosY = 22f;
-            spawnManager.spawnInterval = 5f;
+            spawnManager.spawnInterval = 7f;
             spawnManager.despawnDelay = 6f;
 
             buffSpawnManager.spawnInterval = 5f;
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
             spawnManager.maxSpawnPosZ = 140f;
             spawnManager.minSpawnPosY = 15f;
             spawnManager.maxSpawnPosY = 25f;
-            spawnManager.spawnInterval = 4f;
+            spawnManager.spawnInterval = 9f;
             spawnManager.despawnDelay = 5f;
 
             buffSpawnManager.spawnInterval = 7f;

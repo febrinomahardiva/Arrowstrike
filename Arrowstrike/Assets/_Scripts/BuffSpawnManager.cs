@@ -37,7 +37,7 @@ public class BuffSpawnManager : MonoBehaviour
     {
         while (isSpawning)
         {
-            int buffCount = Random.Range(1, 4); // Jumlah buff yang akan di-spawn dalam interval ini
+            int buffCount = Random.Range(1, 3); // Jumlah buff yang akan di-spawn dalam interval ini
 
             for (int i = 0; i < buffCount; i++)
             {
