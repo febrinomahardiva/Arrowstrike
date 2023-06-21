@@ -4,13 +4,13 @@
 An indie archery game.  Be very careful, you can sharpen your archery skills.
 
 ## How to Play Arrow Strike? ##
-*Left thumbstick (LStick): W/A/S/D movement.
-*Right thumbstick (RStick): Aiming/looking around.
-*Right trigger (RIndexTrigger): Shooting.
-*Left trigger (LIndexTrigger): Aim mode.
-*Right grip button (RGrip): Reload.
-*Right, thumbstick click (RStickClick): Use/interact with objects.
-*Left thumbstick click (LStickClick): Run.
+* Left thumbstick (LStick): W/A/S/D movement.
+* Right thumbstick (RStick): Aiming/looking around.
+* Right trigger (RIndexTrigger): Shooting.
+* Left trigger (LIndexTrigger): Aim mode.
+* Right grip button (RGrip): Reload.
+* Right, thumbstick click (RStickClick): Use/interact with objects.
+* Left thumbstick click (LStickClick): Run.
 
 ## Trailer Arrow Strike ##
 Watch the trailer on Youtube: https://youtu.be/yT2WNDnVEX8
