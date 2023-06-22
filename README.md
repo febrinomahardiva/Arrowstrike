@@ -16,7 +16,7 @@ An indie archery game.  Be very careful, you can sharpen your archery skills.
 Watch the trailer on Youtube: https://youtu.be/yT2WNDnVEX8
 
 ## Project Arrow Strike ##
-Access the entire project: 
+Access the entire project: https://telkomuniversityofficial-my.sharepoint.com/:u:/g/personal/amirhf_telkomuniversity_ac_id/Ef4VLmvu_4hJtVmZS52TCSkBcn_3LqlTG3qNPHj16fBGlw?e=rD9Zub
 
 ## Itch.io  ##
 Download Arrow Strike at: https://timartisans.itch.io/arrow-strike
